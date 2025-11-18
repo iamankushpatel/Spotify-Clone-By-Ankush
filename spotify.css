@@ -1,0 +1,322 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    border: 0px;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+body{
+    height: 600px;
+    width: 1280px;
+    padding: 8px;
+    background-color: rgb(0, 0, 0);
+    position: fixed;
+}
+/* ........NAVIGATIN BAR STARTS FROM HERE.......... */
+.nav{
+    background-color: black;
+    color: white;
+    padding: 8px;
+    margin: -8px;
+    height: 64px;
+    width: 1280px;
+    display: flex;
+    /* position: fixed; */
+}
+.nav .spotify-logo{
+    height: 64px;
+    width: 72px;
+    margin-left: -8px;
+    margin-top: -8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 32px;
+    background-color: rgb(0, 0, 0);
+}
+.nav .spotify-logo i{
+    height: 32px;
+    width: 32px;
+}
+.nav .home{
+    background-color: #1f1f1f;
+    border-radius: 50%;
+    height: 48px;
+    width: 48px;
+    margin-left: 0px 8px;
+    padding: 12px;
+    font-size: 20px;
+}
+.nav .search-box{
+    height: 48px;
+    width: 572px;
+    background-color: #1f1f1f;
+    border-radius: 24px;
+    margin-left: 8px;
+    display: flex;
+    align-items: center;
+}
+.nav .search-box i{
+    height: 48px;
+    width: 48px;
+    padding: 0px 12px;
+    font-size: 22px;
+    display: flex;
+    align-items: center;
+}
+.nav .search-box .nav-search{
+    background-color: #1f1f1f;
+    width: 300px;
+    border: 0px;
+    padding: 12px px 12px 48px;
+    font-size:18px
+}
+.nav .premium{
+    height: 32px;
+    width: 144px;
+    color: rgb(0, 0, 0);
+    border-radius: 18px;
+    padding: 4px 16px;
+    margin: 10px;
+    margin-left: 140px;
+    font-weight:bold;
+}
+.nav .install{
+    color: #b3b3b3;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 4px 16px 4px 16px;
+    font-weight: bold;
+}
+.nav .install .install-app{
+    color: #b3b3b3;
+    font-size: 14px;
+    display: inline;
+    text-decoration: none;
+    margin-left: 5px;
+}
+.nav .notification {
+    height: 32px;
+    width: 32px;
+    justify-content: center;
+    align-items: center;
+    font-size: 16px;
+    margin: 9px;
+    padding:0px 8px ;
+    color: #b3b3b3;
+    background-color:transparent;
+}
+.nav .multi-user {
+    height: 32px;
+    width: 32px;
+    justify-content: center;
+    align-items: center;
+    font-size: 16px;
+    margin: 9px;
+    margin-left: -5px;
+    padding:0px 8px ;
+    color: #b3b3b3;
+    background-color:transparent;
+}
+.nav .profile{
+    height: 48px;
+    width: 48px;
+    background-color: #1f1f1f;
+    border-radius: 50%;
+}
+.nav .profile i{
+    color: aqua;
+}
+/* ...............SIDE BAR STARTS FROM HERE.............. */
+.sidebar{
+    height: 103px;
+    width: 72px;
+    background-color: #180505;
+    margin-top: 8px;
+    display: flex;
+    padding: 12px 16px 8px;
+    justify-content: center;
+    align-items: center;
+    /* position: fixed; */
+}
+.sidebar button{
+    color: rgb(191, 185, 185);
+    background-color: transparent;
+    margin: 10px 8px;
+    
+}
+.sidebar .library{
+    height: 40px;
+    width: 40px;
+    font-size: 24px;
+    display: flex;
+    justify-content: center;
+    /* margin-top: -20px; */
+    align-items: center;
+}
+.sidebar .add-playlist{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 40px;
+    width: 40px;
+    background-color: #1f1f1f;
+    font-size: 16px;
+    border-radius: 50%;
+}
+.sidebar .add-playlist i{
+    height: 16px;
+    width: 16px;
+}
+.playlist{
+    height: 320px;
+    width: 72px;
+    background-color: #180505;
+    padding: 0px 4px 4px;
+    /* scorll effect */
+    overflow-y: auto;
+    /* position: fixed; */
+}
+.playlist::-webkit-scrollbar{
+    background-color: transparent;
+    width: 10px;
+}
+.playlist::-webkit-scrollbar-thumb{
+    background-color: transparent;
+    width: 10px;
+}
+.playlist:hover:-webkit-scrollbar{
+    cursor: pointer;
+    background-color: rgb(237, 0, 0);
+    width: 5px;
+}
+.playlist ul li{
+    list-style-type: none;
+}
+.playlist ul li div{
+    height: 64px;
+    width: 64px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.playlist ul li img{
+    height: 50px;
+    width: 50px;
+    border-radius: 4px;
+}
+.playlist ul li .artist img{
+    border-radius: 50%;
+}
+.main-section{
+    color: white;
+    background-color: #121212;
+    margin-left:76px;
+    margin-top: -395px;
+    border-radius: 5px;
+    padding: 0px 40px;
+    overflow-y: scroll;
+}
+/* .main-section::-webkit-scrollbar {
+    width: 8px;           
+}
+
+.main-section::-webkit-scrollbar-track {
+    background: #f1f1f1; 
+    border-radius: 10px;
+}
+
+.main-section::-webkit-scrollbar-thumb {
+    background: #888;
+    border-radius: 10px;
+}
+
+.main-section::-webkit-scrollbar-thumb:hover {
+    background: #555;
+} */
+.albums::-webkit-scrollbar {
+    width: 8px;
+}
+
+.albums::-webkit-scrollbar-track {
+    background: #f1f1f1;
+    border-radius: 10px;
+}
+
+.albums::-webkit-scrollbar-thumb {
+    background: #888;
+    border-radius: 10px;
+}
+
+.albums::-webkit-scrollbar-thumb:hover {
+    background: #555;
+}
+/* .albums::-webkit-scrollbar{
+    overflow-y: auto;
+    background-color: transparent;
+    width: 10px;
+}
+.albums:-webkit-scrollbar-thumb{
+    background-color: transparent;
+    width: 10px;
+}
+.albums:hover:-webkit-scrollbar{
+    cursor: pointer;
+    width: 5px;
+}  */
+.main-section .different-sections{
+    height: 64px;
+    color: white;
+    border-radius: 10px;
+}
+.main-section .different-sections ul{
+    display: flex;
+    list-style-type: none;
+}
+.main-section .different-sections ul div{
+    background-color:#ffffff1A;
+    margin: 12px 10px 0px 10px;
+    padding: 10px;
+    border-radius: 20px;
+    font-weight: lighter;
+}
+.main-section .different-sections ul .All{
+    color: black;
+    background-color: white;
+    font-weight: bold;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+.main-section .albums .introduction{
+    margin-top: 15px;
+}
+.main-section .albums .introduction p{
+    color: B3b3b3;
+    font-size: 12px;
+    font-weight: lighter;
+    margin-bottom: 5px;
+}
+.main-section .albums .introduction  .Ankush{
+    text-decoration: none;
+    color: #fff;
+}
+.main-section .albums .items{
+    height: 247px;
+    /* padding: 0px 0px 0px 22px; */
+    display: flex;
+}
+.main-section .albums .items .cards{
+    height: 247px;
+    width: 190px;
+    font-size: small;
+    color: white;
+    border-radius: 5px;
+    margin: 3px;
+    padding: 25px 10px 5px 0px ;
+}
+.main-section .albums .items .cards img{
+    height: 180px;
+    width: 180px;
+    border-radius: 5px;
+}
